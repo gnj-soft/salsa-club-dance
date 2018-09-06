@@ -16,12 +16,6 @@ public interface PlaningDao {
 
 	public Planing getPlaningByPlaningId(Long planingId) throws Exception;
 	
-	public List<Planing> getPlaningsByLessonId(Long lessonId) throws Exception;
-	
-	public List<Planing> getPlaningsByTeacherId(Long teacherId) throws Exception;
-	
-	public List<Planing> getPlaningsByMemberId(Long memberId) throws Exception;
-	
 	public boolean isPlaningExist(Long planingId) throws Exception;
 	
 	public long countExistingPlanings() throws Exception;

@@ -13,9 +13,9 @@ import gnj_soft.salsa.club.dance.model.Lesson;
 public interface LessonDao {
 	
 	public Lesson getLessonByLessonId(Long lessonId) throws Exception;
-
+	
 	public Lesson getLessonByLessonName(String lessonName) throws Exception;
-
+	
 	public List<Lesson> getLessonsByLessonLevel(Integer lessonLevel) throws Exception;
 	
 	public List<Lesson> getLessons() throws Exception;

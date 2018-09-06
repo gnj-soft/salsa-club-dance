@@ -16,8 +16,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  * @author Ghislain N.
  */
 @Entity
-public class Member {
+public class Member implements java.io.Serializable {
 
+	private static final long serialVersionUID = 3687004091518273776L;
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@JsonProperty("id")
@@ -27,7 +29,7 @@ public class Member {
 	@Column(nullable = false)
 	private String lastName;
 	@Column(nullable = false)
-	private Integer level;
+	private Integer level;	
 
 	public Member() {
 		// Empty constructor

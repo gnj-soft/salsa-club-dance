@@ -27,24 +27,6 @@ public class PlaningDoaImp implements PlaningDao {
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<Planing> getPlaningsByLessonId(Long lessonId) {
-		return this.sessionFactory.getCurrentSession().createQuery("from Planing where lessonId = ?").setParameter(0, lessonId).list();
-	}
-
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<Planing> getPlaningsByTeacherId(Long teacherId) {
-		return this.sessionFactory.getCurrentSession().createQuery("from Planing where teacherId = ?").setParameter(0, teacherId).list();
-	}
-
-	@SuppressWarnings("unchecked")
-	@Override
-	public List<Planing> getPlaningsByMemberId(Long memberId) {
-		return this.sessionFactory.getCurrentSession().createQuery("from Planing where memberId = ?").setParameter(0, memberId).list();
-	}
-
-	@SuppressWarnings("unchecked")
-	@Override
 	public List<Planing> getPlanings() {
 		return this.sessionFactory.getCurrentSession().createQuery("from Planing").list();
 	}
